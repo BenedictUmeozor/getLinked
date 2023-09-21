@@ -1,19 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Unica+One&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  color: #fff;
 
-  --btn-bg-color: radial-gradient(circle at 30% 40%, #ff69b4, transparent),
-    radial-gradient(circle at 70% 80%, #00bfff, transparent),
-    radial-gradient(circle at 50% 20%, #ffd700, transparent), #f0f0f0;
+  --btn-bg-color: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56%,
+    #ff26b9 100%,
+    #fe34b9 100%
+  );
 }
 
 ::-webkit-scrollbar {
@@ -22,4 +29,41 @@
 
 body {
   background-color: #150e28;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 990px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+button {
+  width: 172px;
+  height: 53px;
+  border-radius: 4px;
+  background: var(--btn-bg-color);
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(
+      270deg,
+      #903aff 100%,
+      #d434fe 100%,
+      #ff26b9 56%,
+      #fe34b9 0%
+    );
+  }
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  object-fit: cover;
 }

@@ -1,0 +1,114 @@
+.hero {
+  .heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 700;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 4rem;
+
+      &.underline {
+        @media only screen and (max-width: 768px) {
+          width: 115px;
+          top: 2.2rem;
+          right: 4rem;
+        }
+      }
+
+      &.star {
+        left: 1.5rem;
+
+        @media only screen and (max-width: 768px) {
+          width: 10px;
+          left: 6rem;
+        }
+      }
+    }
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 2rem;
+      text-align: center;
+    }
+
+    .left {
+      .imageOne {
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+
+        .brMobile {
+          display: none;
+
+          @media only screen and (max-width: 768px) {
+            display: inline-block;
+          }
+        }
+
+        .br {
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+
+      .countdown {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-family: "Unica One", sans-serif;
+        font-size: 4rem;
+
+        @media only screen and (max-width: 768px) {
+          justify-content: center;
+        }
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+
+      .ball {
+        position: absolute;
+        display: block;
+        top: 0;
+      }
+    }
+  }
+}
