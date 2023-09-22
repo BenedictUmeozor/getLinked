@@ -68,7 +68,7 @@
           bottom: -60%;
 
           @media only screen and (max-width: 768px) {
-            transform: translateY(120%) translateX(-50%);
+            transform: translateY(120%) translateX(-3.25vw);
             position: relative;
           }
         }
@@ -104,7 +104,7 @@
           bottom: -60%;
 
           @media only screen and (max-width: 768px) {
-            transform: translateY(120%) translateX(-210%);
+            transform: translateY(120%) translateX(-14vw);
             position: relative;
           }
         }
