@@ -1,4 +1,7 @@
 .hero {
+  margin-top: 1rem;
+  border-bottom: 1px rgba(255, 255, 255, 0.18) solid;
+
   .heading {
     position: relative;
     display: flex;
@@ -56,8 +59,33 @@
     }
 
     .left {
+      position: relative;
+
+      .radial {
+        position: absolute;
+        top: -50%;
+        left: 15%;
+        transform: translateX(15%);
+        opacity: 0.5;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+
+        @media only screen and (max-width: 768px) {
+          left: -5%;
+          transform: translateX(-10%);
+        }
+      }
+
       .imageOne {
         margin-bottom: 0.75rem;
+        width: 90%;
+
+        @media only screen and (max-width: 768px) {
+          margin: auto;
+          max-width: 500px;
+        }
       }
 
       p {
@@ -103,10 +131,22 @@
 
     .right {
       position: relative;
+      background: url("../../assets/metrix.svg") no-repeat center;
+
+      .imageOne {
+        max-width: 90%;
+
+        @media only screen and (max-width: 768px) {
+          margin: auto;
+          max-width: 500px;
+        }
+      }
 
       .ball {
         position: absolute;
         display: block;
+        max-width: 90%;
+        margin: auto;
         top: 0;
       }
     }

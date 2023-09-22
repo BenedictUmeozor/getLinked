@@ -1,0 +1,92 @@
+.rules {
+  padding: 4rem 0;
+  border-bottom: 1px rgba(255, 255, 255, 0.18) solid;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .radialOne {
+      position: absolute;
+      top: -10%;
+      left: 75%;
+      opacity: 0.5;
+
+      @media only screen and (max-width: 768px) {
+        left: -15%;
+      }
+    }
+
+    .radialTwo {
+      position: absolute;
+      bottom: -40%;
+      right: 15%;
+      opacity: 0.5;
+
+      @media only screen and (max-width: 768px) {
+        right: -60%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .left {
+      flex: 1;
+      order: 2;
+
+      @media only screen and (max-width: 768px) {
+        order: 1;
+        margin-bottom: 2.5rem;
+      }
+
+      .svg {
+        width: 85%;
+
+        @media only screen and (max-width: 768px) {
+          margin: auto;
+          max-width: 500px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      order: 1;
+
+      h2 {
+        color: white;
+        font-size: 2rem;
+        font-family: "ClashDisplay-Bold", sans-serif;
+        word-wrap: break-word;
+        margin-bottom: 0.75rem;
+
+        @media only screen and (max-width: 768px) {
+          order: 2;
+          font-size: 1.25rem;
+          text-align: center;
+        }
+
+        span {
+          color: #d434fe;
+        }
+      }
+    }
+
+    .text {
+      color: white;
+      font-size: 0.95rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      line-height: 27.5px;
+      word-wrap: break-word;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 0.94rem;
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
 import styles from "./header.module.scss";
-import logo from "../../assets/logo.svg";
 import { v4 as uuidv4 } from "uuid";
 import menuBar from "../../assets/menubar.svg";
 import closeBtn from "../../assets/close.svg";
@@ -37,7 +36,7 @@ export default function Header() {
       <header className={styles.header}>
         <div className={`container ${styles.container}`}>
           <a href="#" className={styles.logo}>
-            <Image src={logo} alt="GetLinked logo" />
+            <h1>get<span>linked</span></h1>
           </a>
           <nav className={`${open && styles.open}`}>
             <ul>

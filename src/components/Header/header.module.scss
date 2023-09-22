@@ -2,17 +2,25 @@
   padding: 2rem 0 1.5rem;
   border-bottom: 1px rgba(255, 255, 255, 0.18) solid;
 
+  @media only screen and (max-width: 768px) {
+    padding: 1.5rem 0 1rem;
+  }
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .logo {
-      img {
-        width: 170px;
+      text-decoration: none;
 
-        @media only screen and (max-width: 768px) {
-          width: 120px;
+      h1 {
+        font-family: "ClashDisplay-Bold", sans-serif;
+        font-size: 2rem;
+        color: #fff;
+
+        span {
+          color: #d434fe;
         }
       }
     }
@@ -33,7 +41,6 @@
         text-align: left;
         display: block;
         transition: all 0.5s ease-in-out;
-        
 
         &.open {
           right: 0;
@@ -87,7 +94,8 @@
       display: none;
       height: 14px;
       width: 19px;
-      z-index: 9;
+      z-index: 999;
+      cursor: pointer;
 
       @media only screen and (max-width: 768px) {
         display: block;
