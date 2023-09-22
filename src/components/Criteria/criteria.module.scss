@@ -91,12 +91,17 @@
 
         @media only screen and (max-width: 768px) {
           text-align: center;
+          line-height: 22.56px
         }
 
         span {
           font-size: 1rem;
           line-height: 27.76px;
           color: #ff26b9;
+
+          @media only screen and (max-width: 768px) {
+            line-height: 22.56px
+          }
         }
       }
     }
