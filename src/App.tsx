@@ -5,6 +5,7 @@ import FAQ from "./components/FAQ";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import RulesAndGuidelines from "./components/RulesAndGuidlines";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <RulesAndGuidelines />
       <Criteria />
       <FAQ />
+      <Timeline />
     </main>
   );
 }

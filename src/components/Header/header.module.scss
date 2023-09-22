@@ -37,6 +37,7 @@
         height: 100vh;
         width: 100%;
         background-color: #150e28;
+        padding:  0 1rem;
         z-index: 7;
         text-align: left;
         display: block;
@@ -85,7 +86,6 @@
 
         @media only screen and (max-width: 768px) {
           margin-top: 2rem;
-          margin-left: 2.75rem;
         }
       }
     }
