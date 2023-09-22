@@ -76,6 +76,12 @@
         .date {
           left: -55%;
           bottom: -30%;
+
+          @media only screen and (max-width: 768px) {
+            left: 1.5rem;
+            bottom: -2rem;
+            position: absolute;
+          }
         }
 
         .content {
