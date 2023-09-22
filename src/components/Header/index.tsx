@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import menuBar from "../../assets/menubar.svg";
 import closeBtn from "../../assets/close.svg";
 import { useState } from "react";
+import Image from "../Image";
 
 const links = [
   {
@@ -36,7 +37,7 @@ export default function Header() {
       <header className={styles.header}>
         <div className={`container ${styles.container}`}>
           <a href="#" className={styles.logo}>
-            <img src={logo} alt="GetLinked logo" />
+            <Image src={logo} alt="GetLinked logo" />
           </a>
           <nav className={`${open && styles.open}`}>
             <ul>
@@ -50,9 +51,14 @@ export default function Header() {
           </nav>
           <div className={styles.menuBar}>
             {open ? (
-              <img src={closeBtn} onClick={() => setOpen(false)} alt="menu" />
+              <div onClick={() => setOpen(false)}>
+                <Image src={closeBtn} alt="menu" />
+              </div>
             ) : (
-              <img src={menuBar} onClick={() => setOpen(true)} alt="menu" />
+              <div onClick={() => setOpen(true)}>
+                {" "}
+                <Image src={menuBar} alt="menu" />
+              </div>
             )}
           </div>
         </div>

@@ -4,6 +4,7 @@ import title from "../../assets/Title.png";
 import img from "../../assets/man-wearing-smart (1).svg";
 import star from "../../assets/star.svg";
 import ball from "../../assets/ball.svg";
+import Image from "../Image";
 
 export default function Hero() {
   return (
@@ -11,14 +12,14 @@ export default function Hero() {
       <section className={styles.hero}>
         <div className={`container ${styles.container}`}>
           <div className={styles.heading}>
-            <img className={styles.star} src={star} alt="star" />
+            <Image className={styles.star} src={star} alt="star" />
             <h2>Igniting a Revolution in HR Innovation</h2>
-            <img src={underline} className={styles.underline} alt="image" />
+            <Image src={underline} className={styles.underline} alt="image" />
           </div>
           <div className={styles.section}>
             <div className={styles.left}>
               <div className={styles.imageOne}>
-                <img src={title} alt="title" />
+                <Image src={title} alt="title" />
               </div>
               <p>
                 Participate in getlinked tech Hackathon <br className={styles.brMobile} /> 2023 stand
@@ -41,8 +42,8 @@ export default function Hero() {
               </div>
             </div>
             <div className={styles.right}>
-              <img src={img} alt="man with glasses" />
-              <img src={ball} alt="ball" className={styles.ball} />
+              <Image src={img} alt="man with glasses" />
+              <Image src={ball} alt="ball" className={styles.ball} />
             </div>
           </div>
         </div>
