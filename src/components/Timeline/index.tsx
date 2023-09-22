@@ -52,7 +52,8 @@ export default function Timeline() {
         <div className={styles.header}>
           <h2>Timeline</h2>
           <p>
-            Here is the breakdown of the time we anticipate <br /> using for the
+            Here is the breakdown of the time <br className={styles.mobile} />{" "}
+            we anticipate <br className={styles.desktop} /> using for the
             upcoming event.
           </p>
         </div>
