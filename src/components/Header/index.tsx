@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import { v4 as uuidv4 } from "uuid";
 import menuBar from "../../assets/menubar.svg";
@@ -35,9 +36,11 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={`container ${styles.container}`}>
-          <a href="#" className={styles.logo}>
-            <h1>get<span>linked</span></h1>
-          </a>
+          <Link to="/" className={styles.logo}>
+            <h1>
+              get<span>linked</span>
+            </h1>
+          </Link>
           <nav className={`${open && styles.open}`}>
             <ul>
               {links.map((link) => (

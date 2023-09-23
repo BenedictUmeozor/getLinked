@@ -59,6 +59,11 @@ button {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease-in-out;
 
+  @media only screen and (max-width: 768px) {
+    width: 140px;
+    height: 45px;
+  }
+
   &:hover {
     background: linear-gradient(
       270deg,

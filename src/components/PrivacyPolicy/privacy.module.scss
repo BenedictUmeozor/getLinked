@@ -1,0 +1,194 @@
+.privacy {
+  padding: 4rem 0;
+  border-bottom: 1px rgba(255, 255, 255, 0.18) solid;
+
+  .heading {
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+      font-size: 2rem;
+      font-family: "ClashDisplay-Bold", sans-serif;
+      word-wrap: break-word;
+      margin-bottom: 0.75rem;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 1.25rem;
+        text-align: center;
+      }
+
+      span {
+        color: #d434fe;
+      }
+    }
+
+    .span {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      font-family: "Montserrat";
+      font-weight: 400;
+      line-height: 27.5px;
+      word-wrap: break-word;
+      display: block;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    p {
+      font-size: 0.95rem;
+      font-family: "Montserrat";
+      font-weight: 400;
+      line-height: 26.38px;
+      word-wrap: break-word;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        line-height: 22.61px;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      flex: 1;
+      border: 1px #d434fe solid;
+      padding: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .text {
+        color: white;
+        font-size: 0.95rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+        line-height: 30.3px;
+        word-wrap: break-word;
+
+        @media only screen and (max-width: 768px) {
+          line-height: 25.97px;
+          font-size: 0.8rem;
+        }
+      }
+
+      .license {
+        margin-top: 1.5rem;
+        @media only screen and (max-width: 768px) {
+          text-align: left;
+        }
+
+        h3 {
+          color: #d434fe;
+          font-size: 1rem;
+          font-family: "Montserrat";
+          font-weight: 700;
+          line-height: 34.62px;
+          word-wrap: break-word;
+
+          @media only screen and (max-width: 768px) {
+            line-height: 24.13px;
+            font-size: 0.95rem;
+          }
+        }
+
+        p {
+          color: white;
+          font-size: 0.95rem;
+          font-family: "Montserrat";
+          font-weight: 700;
+          line-height: 30.3px;
+          word-wrap: break-word;
+
+          @media only screen and (max-width: 768px) {
+            line-height: 25.97px;
+            font-size: 0.8rem;
+          }
+        }
+
+        ul {
+          list-style-type: none;
+          margin-top: 1rem;
+
+          li {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 0.5rem;
+
+            svg {
+              width: 2rem;
+              line-height: 30.3px;
+            }
+
+            span {
+              color: white;
+              font-size: 0.95rem;
+              font-family: "Montserrat";
+              font-weight: 400;
+              line-height: 30.3px;
+              word-wrap: break-word;
+
+              @media only screen and (max-width: 768px) {
+                line-height: 21.11px;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+
+        .button {
+          margin-top: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imgOne {
+        width: 85%;
+
+        @media only screen and (max-width: 768px) {
+          margin: auto;
+          max-width: 500px;
+        }
+      }
+
+      .imgTwo {
+        position: absolute;
+        width: 85%;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media only screen and (max-width: 768px) {
+          left: 50%;
+          transform: translateX(-50%);
+          margin: auto;
+          max-width: 500px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 14rem;
+    }
+  }
+}

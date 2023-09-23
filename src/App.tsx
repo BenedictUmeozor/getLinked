@@ -1,18 +1,17 @@
-import styles from "./app.module.scss";
 import BigIdea from "./components/BigIdea";
 import Criteria from "./components/Criteria";
 import FAQ from "./components/FAQ";
-import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import PartnersAndSponsors from "./components/PartnersAndSponsors";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import PrizesAndRewards from "./components/PrizesAndRewards";
 import RulesAndGuidelines from "./components/RulesAndGuidlines";
 import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <main className={styles.main}>
-      <Header />
+    <main>
       <Hero />
       <BigIdea />
       <RulesAndGuidelines />
@@ -21,6 +20,8 @@ function App() {
       <Timeline />
       <PrizesAndRewards />
       <PartnersAndSponsors />
+      <PrivacyPolicy />
+      <Footer />
     </main>
   );
 }
