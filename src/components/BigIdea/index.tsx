@@ -9,7 +9,14 @@ export default function BigIdea() {
       <section className={styles.bigidea}>
         <div className={`container ${styles.container}`}>
           <div className={styles.left}>
-            <Image src={bigIdeaImg} className={styles.img} alt="Big idea" />
+            <div className={styles.position}>
+              <h3 className={styles.h3}>
+                The Big
+                <br />
+                Idea!
+              </h3>
+              <Image src={bigIdeaImg} className={styles.img} alt="Big idea" />
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.heading}>

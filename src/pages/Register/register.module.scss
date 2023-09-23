@@ -1,6 +1,10 @@
 .register {
   padding: 4rem 0;
 
+  @media only screen and (max-width: 768px) {
+    padding: 2.5rem 0;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 47% 1fr;
@@ -157,7 +161,7 @@
         }
 
         button {
-            width: 100%;
+          width: 100%;
         }
       }
     }
