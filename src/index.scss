@@ -81,6 +81,108 @@ img {
   object-fit: cover;
 }
 
+form {
+  margin-top: 2rem;
+
+  div {
+    margin-bottom: 1.25rem;
+
+    input[type="text"],
+    input[type="email"] {
+      appearance: none;
+      height: 45px;
+      width: 100%;
+      padding: 0 0.5rem;
+      border: 1px solid #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: rgba(255, 255, 255, 0.03);
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      font-family: "Montserrat";
+      font-weight: 400;
+      word-wrap: break-word;
+
+      &::placeholder {
+        color: white;
+        font-size: 1rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #d434fe;
+      }
+    }
+
+    select {
+      appearance: none;
+      height: 45px;
+      width: 100%;
+      padding: 0 0.5rem;
+      border: 1px solid #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: rgba(255, 255, 255, 0.03);
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      font-family: "Montserrat";
+      font-weight: 400;
+      word-wrap: break-word;
+
+      &::placeholder {
+        color: white;
+        font-size: 1rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #d434fe;
+      }
+    }
+
+    button {
+      text-align: center;
+      margin-top: 1.5rem;
+      display: block;
+      margin: auto;
+    }
+
+    textarea {
+      appearance: none;
+      width: 100%;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: rgba(255, 255, 255, 0.03);
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      font-family: "Montserrat";
+      font-weight: 400;
+      word-wrap: break-word;
+
+      &::placeholder {
+        color: white;
+        font-size: 1rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #d434fe;
+      }
+    }
+  }
+}
+
 /**
  * @license
  *

@@ -10,22 +10,22 @@ const links = [
   {
     id: uuidv4(),
     name: "Timeline",
-    path: "#timeline",
+    path: "/",
   },
   {
     id: uuidv4(),
     name: "Overview",
-    path: "#overview",
+    path: "/",
   },
   {
     id: uuidv4(),
     name: "FAQs",
-    path: "#faqs",
+    path: "/",
   },
   {
     id: uuidv4(),
     name: "Contact",
-    path: "#contact",
+    path: "/contact",
   },
 ];
 
@@ -45,11 +45,15 @@ export default function Header() {
             <ul>
               {links.map((link) => (
                 <li key={link.id}>
-                  <a href={link.path}>{link.name}</a>
+                  <Link to={link.path} onClick={() => setOpen(false)}>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
-            <button>Register</button>
+            <Link onClick={() => setOpen(false)} to="/register">
+              <button>Register</button>
+            </Link>
           </nav>
           <div className={styles.menuBar}>
             {open ? (
